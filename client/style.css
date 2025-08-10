@@ -1,0 +1,202 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    padding: 20px;
+    animation: fadeIn 0.8s ease-in;
+}
+
+
+.title {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.description {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+form {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 2.5rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+input, textarea, select {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+    transform: scale(1.02);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+button {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px 0 rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+
+    background: linear-gradient(135deg, #5082e5 0%, #827293 100%);
+    box-shadow: 0 8px 25px 0 rgba(102, 126, 234, 0.5);
+} 
+
+
+.message {
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 500px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    direction: rtl;
+}
+
+.message.success {
+    background: #ffffff;
+    color: #2ba89b;
+    box-shadow: 0 4px 15px 0 rgba(43, 168, 155, 0.3);
+}
+
+.message.error {
+    background: #ffffff;
+    color: #d63447;
+    box-shadow: 0 4px 15px 0 rgba(214, 52, 71, 0.3);
+}
+
+
+.admin-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+.admin-input {
+    background: rgba(255, 255, 255, 0.2) ;
+    color: #fff ;
+    border: 1px solid rgba(255, 255, 255, 0.3) ;
+}
+
+.admin-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.admin-input:focus {
+    background: rgba(255, 255, 255, 0.3) ;
+    box-shadow: 0 0 0 3px rgba(119, 119, 250, 0.3) ;
+}
+
+.admin-button:hover {
+    background: linear-gradient(135deg, #0bc0dc 0%, #24004b 100%);
+    box-shadow: 0 8px 25px 0 rgba(72, 106, 241, 0.698);
+}
+
+
+
+
+/* Table Styling */
+.complaints-table {
+    width: 85%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.complaints-table th {
+    background: #6b399467;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.complaints-table td {
+    padding: 1.2rem 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+.complaints-table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.01);
+}
+
+
+

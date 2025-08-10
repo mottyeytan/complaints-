@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="comlaints.script.js" defer></script>
+    <script src="admin.script.js" defer></script>
+</head>
+<body>
+    <h1 class = "title"> Anonymous complaints form </h1>
+    <div class="description">
+        <p>
+            this is a form for anonymous complaints. you can write your complaint here and submit it.
+        </p>
+    </div>
+    <form  id="complaint-form">
+        <textarea id="complaint" name = "complaint" placeholder="write your complaint here" required></textarea>
+        <select id="category" name = "category" required>
+            <option value="Food">Food</option>
+            <option value="Orders">Orders</option>
+            <option value="Equipment">Equipment</option>
+            <option value="Other">Other</option>
+            
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <p id="message_complaint" class="message" style="display: none;"></p>
+
+
+    
+
+<h2 class="title">Admin Panel</h2>
+<div class = "description">
+    <p>
+        this is the admin panel. you can get all the complaints here.
+    </p>
+</div>
+<form id="admin-form" class="admin-form">
+    <input type="password" id="password" name="password" placeholder="Admin Password" class="admin-input">
+    <button type="submit" class="admin-button">Get All Complaints</button>
+</form>
+
+<p id="message_admin" class="message" style="display: none;"></p>
+
+<table id="complaints-table" class="complaints-table" style="display: none;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Complaint</th>
+            <th>Category</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody id="complaints-tbody">
+    </tbody>
+</table>
+
+</body>
+
+
+
+
+</html>
